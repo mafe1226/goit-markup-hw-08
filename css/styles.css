@@ -1,0 +1,131 @@
+:root {
+  --primary-color: white;
+  --secundary-color: #757575;
+  --custom-dark: #2f303a;
+  --custom-light: #2196f3;
+  --detail-color: #f5f4fa;
+  --buttons-color: #f5f4fa;
+}
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-color);
+}
+ul {
+  list-style: none;
+}
+.primary-color {
+  color: var(--primary-color);
+  background-color: var(--custom-dark);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 5;
+  text-align: center;
+}
+.subs-h2 {
+  font-size: 36px;
+  text-align: center;
+}
+.items-h3 {
+  font-size: 14px;
+}
+.names-h4 {
+  color: var(--custom-dark);
+  font-size: 16px;
+  font-weight: 500;
+}
+.names-h4-portafolio {
+  color: var(--custom-dark);
+  font-weight: 700;
+  font-size: 18px;
+}
+.color-dark {
+  color: var(--custom-dark);
+}
+.color-white {
+  color: var(--detail-color);
+}
+.text-decoration {
+  text-decoration: none;
+}
+/*Header*/
+.header-logo > .logo-azul {
+  color: var(--custom-light);
+  font-weight: 700;
+  font-size: 26px;
+}
+.logo-link {
+  color: var(--custom-dark);
+  font-weight: 700;
+  font-size: 26px;
+}
+.logo-azul {
+  color: var(--custom-light);
+  font-weight: 700;
+  font-size: 26px;
+}
+.header-navigation > .navigation-item > *:hover {
+  color: var(--custom-light);
+}
+.header-navigation > .navigation-item > * {
+  color: var(--custom-dark);
+  cursor: pointer;
+}
+
+.header-contact-section > .header-contact-item > *:hover {
+  color: var(--custom-light);
+}
+.header-contact-section > .header-contact-item > * {
+  color: var(--secundary-color);
+  cursor: pointer;
+}
+/*Main*/
+/*seccion 1*/
+.button-service {
+  background-color: #2196f3;
+  color: var(--detail-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2;
+}
+.buttons > .options > .option-buttons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 2;
+  background-color: var(--buttons-color);
+  border: none;
+}
+/*seccion 2*/
+.section-principal > .advantages > .caracteristics > .description-advantages {
+  color: var(--secundary-color);
+  font-size: 14px;
+  line-height: 24px;
+}
+.description {
+  color: var(--secundary-color);
+  font-size: 16px;
+  line-height: 1;
+}
+/*seccion 3*/
+.experience > .team-work > .people {
+  color: var(--secundary-color);
+  font-size: 16px;
+  line-height: 2;
+}
+/*footer*/
+.logo-azul {
+  color: var(--custom-light);
+  font-weight: 700;
+  font-size: 26px;
+}
+.address-section > .contact > .contact-footer :hover {
+  color: var(--custom-light);
+}
+.address-section > .contact > .contact-footer :hover {
+  color: var(--custom-light);
+}
+.address-section > .contact > .contact-footer {
+  background-color: var(--custom-dark);
+  line-height: 2;
+  font-size: 14px;
+  cursor: pointer;
+}
