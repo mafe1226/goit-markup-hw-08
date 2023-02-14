@@ -169,7 +169,10 @@ body {
   line-height: 30px;
 }
 /*footer portafolio*/
-.address-section > .contact > .contact-footer :hover {
+.contact > .contact-footer :hover {
+  color: var(--custom-light);
+}
+.contact > .contact-footer :focus {
   color: var(--custom-light);
 }
 .address-section {
