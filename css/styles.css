@@ -19,10 +19,16 @@ body {
 .list-style {
   list-style: none;
 }
+.studio-link :focus {
+  color: var(--custom-light);
+}
+.portafolio-focus :focus {
+  color: var(--custom-light);
+}
 .subtitles {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 0.8;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -49,13 +55,9 @@ body {
   font-weight: 700;
   font-size: 26px;
 }
-.header-navigation > .navigation-item > *:focus {
-  color: var(--custom-light);
-}
 .header-navigation > .navigation-item > *:hover {
   color: var(--custom-light);
 }
-
 .header-navigation > .navigation-item > * {
   color: var(--custom-dark);
   cursor: pointer;
@@ -64,9 +66,6 @@ body {
 }
 
 .header-contact-section > .header-contact-item > *:hover {
-  color: var(--custom-light);
-}
-.header-contact-section > .header-contact-item > *:focus {
   color: var(--custom-light);
 }
 
@@ -85,7 +84,7 @@ body {
   color: var(--primary-color);
   font-size: 44px;
   font-weight: 900;
-  line-height: 5;
+  line-height: 1;
   text-align: center;
 }
 .button-service {
@@ -93,7 +92,7 @@ body {
   color: var(--detail-color);
   font-weight: 700;
   font-size: 16px;
-  line-height: 2;
+  line-height: 1;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -105,7 +104,7 @@ body {
 }
 .description-our-advantages {
   color: var(--secundary-color);
-  line-height: 24px;
+  line-height: 0.5;
 }
 /*seccion 3*/
 .bg-our-team {
@@ -115,14 +114,14 @@ body {
   color: var(--custom-dark);
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 0.8;
   text-align: center;
 }
 .profession-our-team {
   color: var(--secundary-color);
   font-size: 16px;
   text-align: center;
-  line-height: 19px;
+  line-height: 0.8;
 }
 /*footer*/
 .logo-azul {
@@ -134,7 +133,7 @@ body {
   color: var(--custom-light);
 }
 .contact-footer {
-  line-height: 24px;
+  line-height: 1.5;
 }
 
 /*CSS PORTAFOLIO*/
@@ -144,9 +143,10 @@ body {
   background-color: var(--custom-light);
 }
 .option-buttons {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 0.6;
   text-align: center;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -160,13 +160,13 @@ body {
   color: var(--custom-dark);
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 0.5;
   letter-spacing: 0.06em;
 }
 .description-projects {
   color: var(--secundary-color);
   font-size: 16px;
-  line-height: 30px;
+  line-height: 0.6;
 }
 /*footer portafolio*/
 .contact > .contact-footer :hover {
@@ -177,10 +177,10 @@ body {
 }
 .address-section {
   background-color: var(--custom-dark);
-  line-height: 2;
+  line-height: 0.5;
   cursor: pointer;
 }
 .websites {
   font-weight: 700;
-  line-height: 16px;
+  line-height: 0.8;
 }
