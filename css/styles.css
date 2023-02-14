@@ -9,34 +9,22 @@
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-color);
+  background-color: var(--primary-color);
+  font-size: 14px;
+  letter-spacing: 0 0 0.03em;
 }
-ul {
+.text-decoration {
+  text-decoration: none;
+}
+.list-style {
   list-style: none;
 }
-.primary-color {
-  color: var(--primary-color);
-  background-color: var(--custom-dark);
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 5;
-  text-align: center;
-}
-.subs-h2 {
-  font-size: 36px;
-  text-align: center;
-}
-.items-h3 {
-  font-size: 14px;
-}
-.names-h4 {
-  color: var(--custom-dark);
-  font-size: 16px;
-  font-weight: 500;
-}
-.names-h4-portafolio {
-  color: var(--custom-dark);
+.subtitles {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 .color-dark {
   color: var(--custom-dark);
@@ -44,9 +32,7 @@ ul {
 .color-white {
   color: var(--detail-color);
 }
-.text-decoration {
-  text-decoration: none;
-}
+
 /*Header*/
 .header-logo > .logo-azul {
   color: var(--custom-light);
@@ -69,6 +55,8 @@ ul {
 .header-navigation > .navigation-item > * {
   color: var(--custom-dark);
   cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .header-contact-section > .header-contact-item > *:hover {
@@ -77,39 +65,56 @@ ul {
 .header-contact-section > .header-contact-item > * {
   color: var(--secundary-color);
   cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 /*Main*/
 /*seccion 1*/
+.bg-principal-tittle {
+  background-color: var(--custom-dark);
+}
+.principal-tittle {
+  color: var(--primary-color);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 5;
+  text-align: center;
+}
 .button-service {
   background-color: #2196f3;
   color: var(--detail-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 2;
-}
-.buttons > .options > .option-buttons {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 2;
-  background-color: var(--buttons-color);
-  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /*seccion 2*/
-.section-principal > .advantages > .caracteristics > .description-advantages {
+.tittles-our-advantages {
+  color: var(--custom-dark);
+  line-height: 24px;
+  font-weight: 700px;
+}
+.description-our-advantages {
   color: var(--secundary-color);
-  font-size: 14px;
   line-height: 24px;
 }
-.description {
-  color: var(--secundary-color);
-  font-size: 16px;
-  line-height: 1;
-}
 /*seccion 3*/
-.experience > .team-work > .people {
+.bg-our-team {
+  background-color: var(--detail-color);
+}
+.names-our-team {
+  color: var(--custom-dark);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+.profession-our-team {
   color: var(--secundary-color);
   font-size: 16px;
-  line-height: 2;
+  text-align: center;
+  line-height: 19px;
 }
 /*footer*/
 .logo-azul {
@@ -120,12 +125,44 @@ ul {
 .address-section > .contact > .contact-footer :hover {
   color: var(--custom-light);
 }
+
+/*CSS PORTAFOLIO*/
+/*MAIN*/
+/*seccion 1*/
+.option-buttons:hover {
+  background-color: var(--custom-light);
+}
+.option-buttons {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.projects-name {
+  color: var(--custom-dark);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.description-projects {
+  color: var(--secundary-color);
+  font-size: 16px;
+  line-height: 30px;
+}
+/*footer portafolio*/
 .address-section > .contact > .contact-footer :hover {
   color: var(--custom-light);
 }
-.address-section > .contact > .contact-footer {
+.address-section {
   background-color: var(--custom-dark);
   line-height: 2;
-  font-size: 14px;
   cursor: pointer;
+}
+.websites {
+  font-weight: 700;
+  line-height: 16px;
 }
