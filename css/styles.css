@@ -19,12 +19,6 @@ body {
 .list-style {
   list-style: none;
 }
-.studio-link :focus {
-  color: var(--custom-light);
-}
-.portafolio-focus :focus {
-  color: var(--custom-light);
-}
 .subtitles {
   font-weight: 700;
   font-size: 36px;
@@ -58,6 +52,9 @@ body {
 .header-navigation > .navigation-item > *:hover {
   color: var(--custom-light);
 }
+.header-navigation > .navigation-item > *:focus {
+  color: var(--custom-light);
+}
 .header-navigation > .navigation-item > * {
   color: var(--custom-dark);
   cursor: pointer;
@@ -66,6 +63,9 @@ body {
 }
 
 .header-contact-section > .header-contact-item > *:hover {
+  color: var(--custom-light);
+}
+.header-contact-section > .header-contact-item > *:focus {
   color: var(--custom-light);
 }
 
