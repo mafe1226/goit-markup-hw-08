@@ -13,6 +13,45 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+/*Normalizacion*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*genericos*/
 .current-link {
   color: var(--custom-light);
 }
@@ -31,7 +70,6 @@ body {
   font-size: 36px;
   line-height: 0.8;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .color-white {
   color: var(--detail-color);
@@ -47,6 +85,8 @@ body {
   color: var(--custom-dark);
   font-weight: 700;
   font-size: 26px;
+  justify-content: flex-start;
+  margin-top: 8px;
 }
 .logo-azul {
   color: var(--custom-light);
@@ -57,7 +97,6 @@ body {
   color: var(--custom-light);
 }
 .navigation-item {
-  color: var(--custom-dark);
   cursor: pointer;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -80,6 +119,7 @@ body {
 /*seccion 1*/
 .bg-principal-tittle {
   background-color: var(--custom-dark);
+  padding: 200px 200px;
 }
 .principal-tittle {
   color: var(--primary-color);
@@ -96,19 +136,28 @@ body {
   line-height: 1.8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-left: 280px;
+  margin-right: 260px;
+  margin-top: 30px;
 }
 /*seccion 2*/
 .tittles-our-advantages {
   color: var(--custom-dark);
   line-height: 24px;
   font-weight: 700px;
+  padding-left: 30px;
 }
 .description-our-advantages {
   color: var(--secundary-color);
-  line-height: 0.5;
+  line-height: 1;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 /*seccion 3*/
 .bg-our-team {
@@ -119,13 +168,14 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 0.8;
-  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .profession-our-team {
   color: var(--secundary-color);
   font-size: 16px;
-  text-align: center;
   line-height: 0.8;
+  padding-bottom: 30px;
 }
 /*footer*/
 .logo-azul {
@@ -155,6 +205,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  justify-content: center;
 }
 .focus-buttons > .buttons-portafolio *:focus {
   background-color: var(--custom-light);
@@ -164,13 +215,19 @@ body {
   color: var(--custom-dark);
   font-weight: 700;
   font-size: 18px;
-  line-height: 0.5;
+  line-height: 2;
   letter-spacing: 0.06em;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .description-projects {
   color: var(--secundary-color);
   font-size: 16px;
-  line-height: 0.6;
+  line-height: 1.8;
+  padding-top: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 /*footer portafolio*/
 .contact > .contact-footer :hover {
@@ -191,4 +248,129 @@ body {
 .button-current {
   color: var(--buttons-color);
   background-color: var(--custom-light);
+}
+/*flexbox*/
+.container {
+  width: 1200px;
+  display: flex;
+}
+.header-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.header-navigation {
+  display: flex;
+  justify-content: flex-start;
+}
+.header-navigation > .navigation-item {
+  margin: 0 50px;
+  display: flex;
+}
+.header-contact-section {
+  display: flex;
+}
+.header-contact-section > .header-contact-item {
+  margin: 0 50px;
+}
+.section {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.subtitle-our-advantage {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.8;
+  text-align: center;
+}
+.our-advantages {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+.what-do-we-do {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 55.05px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.subtitle-our-team {
+  padding-top: 94px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.8;
+  text-align: center;
+}
+.experience {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 94px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+.card {
+  width: 270px;
+  height: 368px;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.contact {
+  justify-content: space-evenly;
+  text-align: left;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 100px;
+}
+/*FLEXBOX PORTAFOLIO*/
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.option-buttons {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin-left: 8px;
+  margin-top: 106px;
+  margin-right: 8px;
+  margin-bottom: 50px;
+  border: none;
+}
+.img-projects {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.description-projects-design {
+  color: var(--secundary-color);
+  font-size: 16px;
+  line-height: 0;
+  padding-top: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.card-portafolio {
+  width: 370px;
+  height: 404px;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  margin-bottom: 30px;
+}
+.list-websites {
+  display: flex;
+  padding-bottom: 16px;
+  justify-content: center;
 }
