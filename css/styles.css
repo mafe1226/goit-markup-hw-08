@@ -350,6 +350,7 @@ address {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin-bottom: 56px;
 }
 .option-buttons {
   font-family: inherit;
