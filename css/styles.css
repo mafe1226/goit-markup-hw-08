@@ -70,7 +70,6 @@ address {
   font-size: 36px;
   line-height: 0.8;
   text-align: center;
-  margin-top: 94px;
   margin-bottom: 55.05px;
 }
 .color-white {
@@ -130,8 +129,10 @@ address {
   font-weight: 900;
   line-height: 1;
   text-align: center;
+  justify-content: center;
   padding-right: 300px;
   padding-left: 300px;
+  padding-bottom: 40px;
   margin-right: 0px;
 }
 .button-service {
@@ -147,6 +148,8 @@ address {
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.principal-section {
   display: flex;
   justify-content: center;
 }
@@ -179,6 +182,7 @@ address {
   color: var(--secundary-color);
   font-size: 16px;
   line-height: 0.8;
+  margin-bottom: 30px;
 }
 /*footer*/
 .logo-azul {
@@ -258,7 +262,8 @@ address {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .header-links {
   display: flex;
@@ -294,18 +299,16 @@ address {
   gap: 10px;
 }
 .caracteristics {
-  flex-basis: calc((100% - 20px) / 3);
-  padding-top: 10px;
+  flex-basis: calc((100% - 30px) / 4);
 }
 .what-do-we-do {
   display: flex;
   gap: 10px;
 }
 .what-do-we-do-img {
-  flex-basis: calc((100% - 20px) / 3);
+  flex-basis: calc((100% - 40px) / 3);
 }
 .subtitle-our-team {
-  margin-top: 94px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -321,9 +324,12 @@ address {
   padding-right: 50px;
   text-align: center;
 }
+.cards-container {
+  display: flex;
+  gap: 10px;
+}
+
 .card {
-  width: 270px;
-  height: 368px;
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
