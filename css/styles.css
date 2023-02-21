@@ -272,7 +272,6 @@ address {
 .link-webstudio {
   padding-top: 24px;
   padding-bottom: 25px;
-  padding-left: 100px;
   display: flex;
 }
 .header-navigation {
@@ -289,7 +288,7 @@ address {
 .header-contact-section > .header-contact-item {
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-right: 50px;
+  padding-left: 50px;
 }
 .subtitle-our-advantage {
   visibility: hidden;

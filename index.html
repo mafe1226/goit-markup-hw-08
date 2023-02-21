@@ -12,54 +12,59 @@
     />
   </head>
   <body>
-    <header class="header-links">
-      <div>
-        <a href="./index.html" class="text-decoration logo-link link-webstudio">
-          <span class="logo-azul">Web</span>Studio</a
-        >
+    <header">
+      <div class="container header-links">
+        <nav class="menu header-links">
+          <a
+            href="./index.html"
+            class="text-decoration logo-link link-webstudio"
+          >
+            <span class="logo-azul">Web</span>Studio</a
+          >
+          <ul class="header-navigation list-style">
+            <li class="navigation-item">
+              <a
+                class="current-link text-decoration navigation-item-studio"
+                href="./index.html"
+                >Estudio</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="./portafolio.html" class="text-decoration color-dark"
+                >Portafolio</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="contactos" class="text-decoration color-dark"
+                >contactos</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav>
+          <ul class="header-contact-section list-style">
+            <li class="header-contact-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="header-logo text-decoration"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="header-contact-item">
+              <a href="tel:+52 55 5529 6000" class="header-logo text-decoration"
+                >+52 55 5529 6000</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="container">
-        <ul class="header-navigation list-style">
-          <li class="navigation-item">
-            <a
-              class="current-link text-decoration navigation-item-studio"
-              href="./index.html"
-              >Estudio</a
-            >
-          </li>
-          <li class="navigation-item">
-            <a href="./portafolio.html" class="text-decoration color-dark"
-              >Portafolio</a
-            >
-          </li>
-          <li class="navigation-item">
-            <a href="contactos" class="text-decoration color-dark">contactos</a>
-          </li>
-        </ul>
-      </nav>
-      <nav class="container">
-        <ul class="header-contact-section list-style">
-          <li class="header-contact-item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="header-logo text-decoration"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contact-item">
-            <a href="tel:+52 55 5529 6000" class="header-logo text-decoration"
-              >+52 55 5529 6000</a
-            >
-          </li>
-        </ul>
-      </nav>
     </header>
     <main>
       <section class="bg-principal-tittle section">
         <div class="container">
           <h1 class="principal-tittle">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
         </div>
-        <div class="principal-section">
+        <div class="principal-section container">
           <button class="button-service">Solicite nuestro servicio</button>
         </div>
       </section>
@@ -145,7 +150,7 @@
             Nuestro Equipo
           </h2>
         </div>
-        <div class="team">
+        <div class="team container">
           <ul class="experience cards-container">
             <li class="team-work card">
               <img
@@ -192,36 +197,38 @@
       </section>
     </main>
     <footer>
-      <address class="address-section">
-        <ul class="contact list-style">
-          <li class="contact-footer">
-            <a href="https://example.com" class="text-decoration logo-azul"
-              >WebStudio</a
-            >
-          </li>
-          <li class="contact-footer">
-            <a
-              href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102072,-99.1346799,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?hl=es"
-              class="color-white text-decoration"
-            >
-              Calz. Ticomán 500, Ciudad de México, CDMX, México</a
-            >
-          </li>
-          <li class="contact-footer">
-            <a
-              href="mailto:info@example.com"
-              class="text-decoration color-white"
-            >
-              info@example.com</a
-            >
-          </li>
-          <li class="contact-footer">
-            <a href="tel:+525555296000" class="text-decoration color-white">
-              +52 55 5529 6000
-            </a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <address class="address-section">
+          <ul class="contact list-style">
+            <li class="contact-footer">
+              <a href="https://example.com" class="text-decoration logo-azul"
+                >WebStudio</a
+              >
+            </li>
+            <li class="contact-footer">
+              <a
+                href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102072,-99.1346799,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?hl=es"
+                class="color-white text-decoration"
+              >
+                Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+              >
+            </li>
+            <li class="contact-footer">
+              <a
+                href="mailto:info@example.com"
+                class="text-decoration color-white"
+              >
+                info@example.com</a
+              >
+            </li>
+            <li class="contact-footer">
+              <a href="tel:+525555296000" class="text-decoration color-white">
+                +52 55 5529 6000
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
