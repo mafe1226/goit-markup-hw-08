@@ -14,11 +14,13 @@
     https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"/>
   </head>
   <body>
-    <header class="header-links container">
-      <a href="index.html" class="text-decoration logo-link">
-        <span class="logo-azul">Web</span>Studio</a
+    <header class="header-links">
+      <div class="">
+        <a href="index.html" class="text-decoration logo-link link-webstudio">
+        <span class="logo-azul ">Web</span>Studio</a
       >
-      <nav>
+      </div>
+      <nav class="container">
         <ul class="header-navigation list-style">
           <li class="navigation-item">
             <a href="index.html" class="text-decoration color-dark">Estudio</a>
@@ -31,6 +33,7 @@
           </li>
         </ul>
       </nav>
+      <nav class="container">
       <ul class="header-contact-section list-style">
         <li class="header-contact-item">
           <a href="mailto:info@devstudio.com" class="header-logo text-decoration focus-buttons-links"
@@ -41,10 +44,12 @@
           <a href="tel:+525555296000" class="header-logo text-decoration focus-buttons-links">+52 55 5529 6000</a>
         </li>
       </ul>
+    </nav>
     </header>
     <main>
       <!-- HIDDEN -->
-      <section>
+      <section class="section">
+        <div class="container">
         <ul class="buttons list-style focus-buttons">
           <li class="buttons-portafolio">
             <button class="option-buttons button-current">Todo</button>
@@ -62,8 +67,8 @@
             <button class="option-buttons">Marketing</button>
           </li>
         </ul>
-      </section>
-      <section>
+      </div>
+      <div class="container">
         <ul class="list-style img-projects">
           <li class="card-portafolio">
             <img
@@ -159,6 +164,7 @@
             <p class="description-projects">Aplicaciones</p>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer>

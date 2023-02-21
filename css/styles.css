@@ -70,6 +70,8 @@ address {
   font-size: 36px;
   line-height: 0.8;
   text-align: center;
+  margin-top: 94px;
+  margin-bottom: 55.05px;
 }
 .color-white {
   color: var(--detail-color);
@@ -119,7 +121,8 @@ address {
 /*seccion 1*/
 .bg-principal-tittle {
   background-color: var(--custom-dark);
-  padding: 200px 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .principal-tittle {
   color: var(--primary-color);
@@ -127,6 +130,9 @@ address {
   font-weight: 900;
   line-height: 1;
   text-align: center;
+  padding-right: 300px;
+  padding-left: 300px;
+  margin-right: 0px;
 }
 .button-service {
   background-color: #2196f3;
@@ -141,10 +147,8 @@ address {
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: center;
-  margin-left: 280px;
-  margin-right: 260px;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 /*seccion 2*/
 .tittles-our-advantages {
@@ -168,14 +172,13 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 0.8;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .profession-our-team {
   color: var(--secundary-color);
   font-size: 16px;
   line-height: 0.8;
-  padding-bottom: 30px;
 }
 /*footer*/
 .logo-azul {
@@ -217,17 +220,18 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 4px;
 }
 .description-projects {
   color: var(--secundary-color);
   font-size: 16px;
   line-height: 1.8;
-  padding-top: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
 }
 /*footer portafolio*/
 .contact > .contact-footer :hover {
@@ -252,51 +256,57 @@ address {
 /*flexbox*/
 .container {
   width: 1200px;
-  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 0px;
 }
 .header-links {
-  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
+.link-webstudio {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  display: flex;
+}
 .header-navigation {
   display: flex;
-  justify-content: flex-start;
 }
 .header-navigation > .navigation-item {
-  margin: 0 50px;
-  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 50px;
 }
 .header-contact-section {
   display: flex;
 }
 .header-contact-section > .header-contact-item {
-  margin: 0 50px;
-}
-.section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 50px;
 }
 .subtitle-our-advantage {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 0.8;
-  text-align: center;
+  visibility: hidden;
 }
 .our-advantages {
   display: flex;
-  align-content: center;
-  justify-content: space-evenly;
+  gap: 10px;
+}
+.caracteristics {
+  flex-basis: calc((100% - 20px) / 3);
+  padding-top: 10px;
 }
 .what-do-we-do {
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 55.05px;
-  padding-right: 30px;
-  padding-left: 30px;
+  gap: 10px;
+}
+.what-do-we-do-img {
+  flex-basis: calc((100% - 20px) / 3);
 }
 .subtitle-our-team {
-  padding-top: 94px;
+  margin-top: 94px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 0.8;
@@ -327,9 +337,14 @@ address {
   padding-left: 100px;
 }
 /*FLEXBOX PORTAFOLIO*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .buttons {
   display: flex;
   justify-content: center;
+  gap: 8px;
 }
 .option-buttons {
   font-family: inherit;
@@ -340,34 +355,29 @@ address {
   justify-content: center;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  margin-left: 8px;
-  margin-top: 106px;
-  margin-right: 8px;
-  margin-bottom: 50px;
   border: none;
 }
 .img-projects {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 .description-projects-design {
   color: var(--secundary-color);
   font-size: 16px;
   line-height: 0;
-  padding-top: 4px;
-  padding-left: 24px;
-  padding-right: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
 }
 .card-portafolio {
-  width: 370px;
-  height: 404px;
   background-color: white;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   margin-bottom: 30px;
+  flex-basis: calc((100% - 20px) / 3);
 }
 .list-websites {
   display: flex;
