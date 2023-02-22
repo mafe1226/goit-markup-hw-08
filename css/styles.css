@@ -25,6 +25,10 @@ p {
   padding: 0;
   border: 0;
 }
+ul {
+  margin: 0;
+  padding: 0;
+}
 html {
   box-sizing: border-box;
 }
@@ -35,11 +39,21 @@ html {
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 address {
   font-style: normal;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .link {
@@ -87,7 +101,7 @@ address {
   font-weight: 700;
   font-size: 26px;
   justify-content: flex-start;
-  margin-top: 8px;
+  margin-right: 50px;
 }
 .logo-azul {
   color: var(--custom-light);
@@ -101,6 +115,9 @@ address {
   cursor: pointer;
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-contact-section > .header-contact-item > *:hover {
@@ -129,11 +146,9 @@ address {
   font-weight: 900;
   line-height: 1;
   text-align: center;
-  justify-content: center;
-  padding-right: 300px;
-  padding-left: 300px;
-  padding-bottom: 40px;
-  margin-right: 0px;
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 .button-service {
   background-color: #2196f3;
@@ -148,23 +163,19 @@ address {
   padding-right: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
-}
-.principal-section {
   display: flex;
-  justify-content: center;
+  margin: 0 auto;
 }
 /*seccion 2*/
 .tittles-our-advantages {
   color: var(--custom-dark);
   line-height: 24px;
   font-weight: 700px;
-  padding-left: 30px;
+  margin-bottom: 10px;
 }
 .description-our-advantages {
   color: var(--secundary-color);
   line-height: 1;
-  padding-left: 30px;
-  padding-top: 10px;
 }
 /*seccion 3*/
 .bg-our-team {
@@ -224,18 +235,13 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
+
   margin-bottom: 4px;
 }
 .description-projects {
   color: var(--secundary-color);
   font-size: 16px;
   line-height: 1.8;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 20px;
 }
 /*footer portafolio*/
 .contact > .contact-footer :hover {
@@ -245,7 +251,6 @@ address {
   color: var(--custom-light);
 }
 .address-section {
-  background-color: var(--custom-dark);
   line-height: 0.5;
   cursor: pointer;
 }
@@ -258,13 +263,6 @@ address {
   background-color: var(--custom-light);
 }
 /*flexbox*/
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
 .header-links {
   display: flex;
   justify-content: space-evenly;
@@ -276,20 +274,20 @@ address {
 }
 .header-navigation {
   display: flex;
+  align-items: center;
 }
-.header-navigation > .navigation-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-right: 50px;
+.menu-item {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
 }
 .header-contact-section {
   display: flex;
+  align-items: center;
 }
-.header-contact-section > .header-contact-item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 50px;
-}
+
 .subtitle-our-advantage {
   visibility: hidden;
 }
@@ -297,7 +295,8 @@ address {
   display: flex;
   gap: 10px;
 }
-.caracteristics {
+
+.our-advantages > .caracteristics {
   flex-basis: calc((100% - 30px) / 4);
 }
 .what-do-we-do {
@@ -315,37 +314,33 @@ address {
   text-align: center;
 }
 .experience {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 50px;
-  padding-bottom: 94px;
-  padding-left: 50px;
-  padding-right: 50px;
   text-align: center;
 }
 .cards-container {
   display: flex;
   gap: 10px;
 }
-
+.box {
+  padding: 24px;
+}
 .card {
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  flex-basis: auto;
+  margin: 0 auto;
+}
+.bg-footer {
+  background-color: var(--custom-dark);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .contact {
   justify-content: space-evenly;
   text-align: left;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 100px;
 }
 /*FLEXBOX PORTAFOLIO*/
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .buttons {
   display: flex;
   justify-content: center;
@@ -369,20 +364,11 @@ address {
   flex-wrap: wrap;
   gap: 10px;
 }
-.description-projects-design {
-  color: var(--secundary-color);
-  font-size: 16px;
-  line-height: 0;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-bottom: 20px;
-}
 .card-portafolio {
   background-color: white;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  margin-bottom: 30px;
   flex-basis: calc((100% - 20px) / 3);
 }
 .list-websites {
