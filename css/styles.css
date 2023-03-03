@@ -5,6 +5,7 @@
   --custom-light: #2196f3;
   --detail-color: #f5f4fa;
   --buttons-color: #f5f4fa;
+  --icons-color: #afb1b8;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -40,6 +41,7 @@ html {
 img {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 address {
@@ -120,15 +122,14 @@ address {
   margin-right: 50px;
 }
 
-.header-contact-section > .header-contact-item > *:hover {
+.header-contact-section > .header-contact-item *:hover {
   color: var(--custom-light);
 }
 .header-contact-section > .header-contact-item > *:focus {
   color: var(--custom-light);
 }
 
-.header-contact-section > .header-contact-item > * {
-  color: var(--secundary-color);
+.header-contact-section > .header-contact-item {
   cursor: pointer;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -136,7 +137,8 @@ address {
 /*Main*/
 /*seccion 1*/
 .bg-principal-tittle {
-  background-color: var(--custom-dark);
+  background-image: url('./../img/personasdiseñandouncarro.jpg');
+  background-color: rgba(47, 48, 58, 0.4);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -220,8 +222,7 @@ address {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+
   border-radius: 4px;
   justify-content: center;
 }
@@ -335,6 +336,11 @@ address {
   background-color: var(--custom-dark);
   padding-top: 60px;
   padding-bottom: 60px;
+  font-style: normal;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
 .contact {
   justify-content: space-evenly;
@@ -354,9 +360,11 @@ address {
   line-height: 1.6;
   text-align: center;
   justify-content: center;
+  border: none;
+}
+.buttons-portafolio:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border: none;
 }
 .img-projects {
   display: flex;
@@ -367,12 +375,170 @@ address {
 .card-portafolio {
   background-color: white;
   border: 1px solid #eeeeee;
+  flex-basis: calc((100% - 20px) / 3);
+}
+.card-portafolio:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  flex-basis: calc((100% - 20px) / 3);
 }
 .list-websites {
   display: flex;
   padding-bottom: 16px;
   justify-content: center;
+}
+/*ICONS*/
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.header-contact-item > svg:hover use {
+  fill: var(--custom-light);
+}
+.telefon-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+.icon-antena {
+  width: 65.32px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.antena {
+  width: 270px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.icon-reloj {
+  width: 66.96px;
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.reloj {
+  width: 270px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.icon-diagrama {
+  width: 70px;
+  height: 70px;
+  margin-top: 25px;
+}
+.diagrama {
+  width: 270px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.icon-autonaustra {
+  width: 70px;
+  height: 70px;
+}
+.astronauta {
+  width: 270px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.relative {
+  position: relative;
+}
+.boxes-what-we-do {
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+.bg-what-we-do {
+  padding: 27px 80px;
+  position: absolute;
+  width: 100%;
+  bottom: 1px;
+  background: rgba(47, 48, 58);
+  opacity: 0.8;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 42px;
+}
+.color-icons {
+  fill: var(--icons-color);
+}
+.icons-our-team:hover {
+  border: 1px solid var(--custom-light);
+  background-color: #2196f3;
+}
+.icons-clients > svg:hover use {
+  fill: var(--custom-light);
+}
+.clients:hover {
+  border: 1px solid var(--custom-light);
+  border-radius: 4px;
+}
+.icons-clients {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.clients:not(:last-child) {
+  margin-right: 30px;
+}
+.clients {
+  width: 170px;
+  height: 81px;
+}
+footer .container aside h3 {
+  line-height: 0.75px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.flex-websites {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.webistes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff1a;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.webistes > svg:hover use {
+  fill: var(--buttons-color);
+}
+.webistes:hover {
+  background-color: var(--custom-light);
+}
+.space-footer {
+  margin-bottom: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
 }
