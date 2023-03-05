@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,700;1,900&display=swap"
@@ -12,7 +16,7 @@
     />
   </head>
   <body>
-    <header">
+    <header>
       <div class="container header-links">
         <nav class="menu header-links">
           <a
@@ -30,7 +34,9 @@
               >
             </li>
             <li class="navigation-item">
-              <a href="./portafolio.html" class="text-decoration color-dark menu-item"
+              <a
+                href="./portafolio.html"
+                class="text-decoration color-dark menu-item"
                 >Portafolio</a
               >
             </li>
@@ -41,26 +47,30 @@
             </li>
           </ul>
         </nav>
-          <ul class="header-contact-section list-style">
-            <li class="header-contact-item">
-                <svg class="mail-icon header-icons  color-icons">
-                  <use href="./img/icons.svg#icon-sobre-1" ></use>
-                </svg>             
-              <a
-                href="mailto:info@devstudio.com"
-                class="header-logo text-decoration menu-item color-dark"
-                >info@devstudio.com</a
-              >
-            </li>          
-            <li class="header-contact-item">
-              <svg class="telefon-icon color-icons">
+        <ul class="header-contact-section list-style">
+          <li class="header-contact-item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="header-logo text-decoration menu-item color-telefon-mail"
+            >
+              <svg class="mail-icon header-icons">
+                <use href="./img/icons.svg#icon-sobre-1"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contact-item">
+            <a
+              href="tel:+52 55 5529 6000"
+              class="header-logo text-decoration menu-item color-telefon-mail"
+            >
+              <svg class="telefon-icon">
                 <use href="./img/icons.svg#icon-telfono-inteligente-1"></use>
               </svg>
-              <a href="tel:+52 55 5529 6000" class="header-logo text-decoration menu-item color-dark"
-                >+52 55 5529 6000</a
-              >
-            </li>
-          </ul>
+              +52 55 5529 6000</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -79,7 +89,7 @@
           <ul class="our-advantages list-style">
             <li class="caracteristics">
               <div class="antena">
-                <svg class="icon-antena">
+                <svg width="65.32" height="70" class="icon-antena">
                   <use href="./img/icons.svg#icon-antena-1-1"></use>
                 </svg>
               </div>
@@ -93,7 +103,7 @@
             </li>
             <li class="caracteristics">
               <div class="reloj">
-                <svg class="icon-reloj">
+                <svg  width="66.96" height="70" class="icon-reloj">
                   <use href="./img/icons.svg#icon-reloj-1"></use>
                 </svg>
               </div>
@@ -106,9 +116,9 @@
             </li>
             <li class="caracteristics">
               <div class="diagrama">
-              <svg class="icon-diagrama">
-                <use href="./img/icons.svg#icon-diagrama-1"></use>
-              </svg>
+                <svg width="70" height="70" class="icon-diagrama">
+                  <use href="./img/icons.svg#icon-diagrama-1"></use>
+                </svg>
               </div>
               <h3 class="tittles-our-advantages color-dark">PLANIFICACIÓN</h3>
               <p class="description-our-advantages">
@@ -118,8 +128,8 @@
             </li>
             <li class="caracteristics">
               <div class="astronauta">
-                <svg class="icon-astronauta">
-                <use href="./img/icons.svg#icon-astronauta-1-1"></use>
+                <svg  width="70" height="70"class="icon-astronauta">
+                  <use href="./img/icons.svg#icon-astronauta-1-1"></use>
                 </svg>
               </div>
               <h3 class="tittles-our-advantages color-dark">
@@ -135,20 +145,20 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="subtitles color-dark ">A qué nos dedicamos</h2>
-          <ul class="list-style what-do-we-do ">
-            <li class="what-do-we-do-img ">
+          <h2 class="subtitles color-dark">A qué nos dedicamos</h2>
+          <ul class="list-style what-do-we-do">
+            <li class="what-do-we-do-img">
               <div class="relative">
-                  <img
-                    src="./img/personatecleando.jpg"
-                    width="373"
-                    height="323"
-                    alt="Persona escribiendo en un teclado"
-                    />
-                  <div class="bg-what-we-do">
-                    <p class="boxes-what-we-do">APLICACIONES DE ESCRITORIO</p>
-                  </div>    
-              </div>                
+                <img
+                  src="./img/personatecleando.jpg"
+                  width="373"
+                  height="323"
+                  alt="Persona escribiendo en un teclado"
+                />
+                <div class="bg-what-we-do">
+                  <p class="boxes-what-we-do">APLICACIONES DE ESCRITORIO</p>
+                </div>
+              </div>
             </li>
             <li class="what-do-we-do-img">
               <div class="relative">
@@ -160,7 +170,7 @@
                 />
                 <div class="bg-what-we-do">
                   <p class="boxes-what-we-do">APLICACIONES MOVILES</p>
-                </div>  
+                </div>
               </div>
             </li>
             <li class="what-do-we-do-img">
@@ -195,29 +205,49 @@
               <h3 class="names-our-team color-dark">Andrés Cubo</h3>
               <p class="profession-our-team">Diseñador de Productos</p>
               <div class="icons-setion icons">
-                <ul class="list-style flex-websites icons-setion ">
+                <ul class="list-style flex-websites icons-setion">
                   <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                  </li>
-                  <li class="webistes"> 
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-twitter-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-facebook-1-1"></use>
-                    </svg>
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-instagram-2-1"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-linkedin-1-1"></use>
-                    </svg>
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-twitter-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="webistes">
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-facebook-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="webistes">
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-linkedin-1-1"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
-              </div>    
+              </div>
             </li>
             <li class="team-work card">
               <img
@@ -229,29 +259,49 @@
               <h3 class="names-our-team color-dark">Carla Palacios</h3>
               <p class="profession-our-team">Desarrolladora Frontend</p>
               <div class="icons-setion icons">
-                <ul class="list-style flex-websites icons-setion ">
+                <ul class="list-style flex-websites icons-setion">
                   <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                  </li>
-                  <li class="webistes"> 
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-twitter-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-facebook-1-1"></use>
-                    </svg>
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-instagram-2-1"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-linkedin-1-1"></use>
-                    </svg>
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-twitter-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="webistes">
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-facebook-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="webistes">
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-linkedin-1-1"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
-              </div> 
+              </div>
             </li>
             <li class="team-work card">
               <img
@@ -263,29 +313,49 @@
               <h3 class="names-our-team color-darkdark">Mario Dorado</h3>
               <p class="profession-our-team">Marketing</p>
               <div class="icons-setion icons">
-                <ul class="list-style flex-websites icons-setion ">
+                <ul class="list-style flex-websites icons-setion">
                   <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                  </li>
-                  <li class="webistes"> 
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-twitter-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-facebook-1-1"></use>
-                    </svg>
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-instagram-2-1"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-linkedin-1-1"></use>
-                    </svg>
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-twitter-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="webistes">
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-facebook-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="webistes">
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-linkedin-1-1"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
-              </div> 
+              </div>
             </li>
             <li class="team-work card">
               <img
@@ -299,24 +369,44 @@
               <div class="icons-setion">
                 <ul class="list-style flex-websites hover-websites">
                   <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-instagram-2-1"></use>
-                    </svg>
-                  </li>
-                  <li class="webistes"> 
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-twitter-1-1"></use>
-                    </svg>
-                  </li>
-                  <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-facebook-1-1"></use>
-                    </svg>
+                    <a href="#"></a>
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-instagram-2-1"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="webistes">
-                    <svg width="20" height="20">
-                      <use class="color-icons" href="./img/icons.svg#icon-linkedin-1-1"></use>
-                    </svg>
+                    <a href="#"></a>
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-twitter-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="webistes">
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-facebook-1-1"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="webistes">
+                    <a href="#">
+                      <svg width="20" height="20">
+                        <use
+                          class="color-icons"
+                          href="./img/icons.svg#icon-linkedin-1-1"
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -331,34 +421,52 @@
           </h2>
         </div>
         <div class="icons-clients container">
-              <svg class="clients">
-                <use class="color-icons" href="./img/icons.svg#icon-Cliente-1-1"></use>
-              </svg>
-            
-              <svg class="clients">
-                <use  class="color-icons" href="./img/icons.svg#icon-Cliente-2-1"></use>
-              </svg>
-            
-              <svg class="clients">
-                <use class="color-icons" href="./img/icons.svg#icon-Cliente-3-1"></use>
-              </svg>
-           
-              <svg class="clients">
-                <use class="color-icons" href="./img/icons.svg#icon-Cliente-4-1"></use>
-              </svg >
-            
-              <svg class="clients">
-                <use class="color-icons" href="./img/icons.svg#icon-Cliente-5-1"></use>
-              </svg>
-            
-              <svg class="clients">
-                <use class="color-icons" href="./img/icons.svg#icon-Cliente-6-1"></use>
-              </svg>          
+          <svg class="clients">
+            <use
+              class="color-icons"
+              href="./img/icons.svg#icon-Cliente-1-1"
+            ></use>
+          </svg>
+
+          <svg class="clients">
+            <use
+              class="color-icons"
+              href="./img/icons.svg#icon-Cliente-2-1"
+            ></use>
+          </svg>
+
+          <svg class="clients">
+            <use
+              class="color-icons"
+              href="./img/icons.svg#icon-Cliente-3-1"
+            ></use>
+          </svg>
+
+          <svg class="clients">
+            <use
+              class="color-icons"
+              href="./img/icons.svg#icon-Cliente-4-1"
+            ></use>
+          </svg>
+
+          <svg class="clients">
+            <use
+              class="color-icons"
+              href="./img/icons.svg#icon-Cliente-5-1"
+            ></use>
+          </svg>
+
+          <svg class="clients">
+            <use
+              class="color-icons"
+              href="./img/icons.svg#icon-Cliente-6-1"
+            ></use>
+          </svg>
         </div>
       </section>
     </main>
     <footer class="bg-footer">
-      <div class="container">
+      <div class="container footer-container">
         <address class="address-section">
           <ul class="contact list-style">
             <li class="contact-footer space-footer">
@@ -369,7 +477,7 @@
             <li class="contact-footer space-footer">
               <a
                 href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102072,-99.1346799,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?hl=es"
-                class="color-white text-decoration "
+                class="color-white text-decoration"
               >
                 Calz. Ticomán 500, Ciudad de México, CDMX, México</a
               >
@@ -389,27 +497,39 @@
             </li>
           </ul>
         </address>
-        <aside class="tittle-websites">
+        <aside>
           <h3 class="tittle-websites">ENCUENTRENOS EN</h3>
-          <ul class="list-style flex-websites icons-setion ">
+          <ul class="list-style flex-websites icons-setion">
             <li class="webistes">
               <svg width="20" height="20">
-                <use class="color-icons" href="./img/icons.svg#icon-instagram-2-1"></use>
-              </svg>
-            </li>
-            <li class="webistes"> 
-              <svg width="20" height="20">
-                <use class="color-icons" href="./img/icons.svg#icon-twitter-1-1"></use>
-              </svg>
-            </li>
-            <li class="webistes">
-              <svg width="20" height="20">
-                <use class="color-icons" href="./img/icons.svg#icon-facebook-1-1"></use>
+                <use
+                  class="color-icons"
+                  href="./img/icons.svg#icon-instagram-2-1"
+                ></use>
               </svg>
             </li>
             <li class="webistes">
               <svg width="20" height="20">
-                <use class="color-icons" href="./img/icons.svg#icon-linkedin-1-1"></use>
+                <use
+                  class="color-icons"
+                  href="./img/icons.svg#icon-twitter-1-1"
+                ></use>
+              </svg>
+            </li>
+            <li class="webistes">
+              <svg width="20" height="20">
+                <use
+                  class="color-icons"
+                  href="./img/icons.svg#icon-facebook-1-1"
+                ></use>
+              </svg>
+            </li>
+            <li class="webistes">
+              <svg width="20" height="20">
+                <use
+                  class="color-icons"
+                  href="./img/icons.svg#icon-linkedin-1-1"
+                ></use>
               </svg>
             </li>
           </ul>

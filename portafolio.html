@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="
-    https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"/>
   </head>
   <body>
     <header>
@@ -33,19 +35,23 @@
         </ul>
       </nav>
       <ul class="header-contact-section list-style">
-        <li class="header-contact-item">
-          <svg class="mail-icon header-icons  color-icons">
-            <use href="./img/icons.svg#icon-sobre-1" ></use>
-          </svg> 
-          <a href="mailto:info@devstudio.com" class=" color-dark header-logo text-decoration focus-buttons-links menu-item"
-            >info@devstudio.com</a
-          >
+        <li class="header-contact-item"> 
+            <a href="mailto:info@devstudio.com" 
+            class=" color-telefon-mail header-logo text-decoration focus-buttons-links menu-item"
+            >
+            <svg class="mail-icon header-icons ">
+              <use href="./img/icons.svg#icon-sobre-1" ></use>
+            </svg>info@devstudio.com
+            </a>
         </li>
         <li class="header-contact-item">
-          <svg class="telefon-icon color-icons">
-            <use href="./img/icons.svg#icon-telfono-inteligente-1"></use>
-          </svg>
-          <a href="tel:+525555296000" class=" color-dark header-logo text-decoration focus-buttons-links menu-item">+52 55 5529 6000</a>
+          <a href="tel:+525555296000" 
+            class=" color-telefon-mail header-logo text-decoration focus-buttons-links menu-item">
+            <svg class="telefon-icon color-icons">
+              <use href="./img/icons.svg#icon-telfono-inteligente-1"></use>
+            </svg>
+            +52 55 5529 6000
+          </a>
         </li>
       </ul>
   </div>
@@ -190,7 +196,7 @@
       </section>
     </main>
     <footer class="bg-footer">
-      <div class="container">
+      <div class="container footer-container">
       <address class="address-section">
         <ul class="contact list-style">
           <li class="contact-footer space-footer">
