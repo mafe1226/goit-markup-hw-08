@@ -79,6 +79,18 @@ svg {
 }
 .current-link {
   color: var(--custom-light);
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.current-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--custom-light);
 }
 .color-dark {
   color: var(--custom-dark);
@@ -119,13 +131,19 @@ svg {
   font-weight: 700;
   font-size: 26px;
 }
-.header-navigation > .navigation-item > *:hover {
+.transition-color {
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-navigation > .navigation-item > :hover {
   color: var(--custom-light);
 }
 .navigation-item {
   cursor: pointer;
   font-weight: 500;
   letter-spacing: 0.02em;
+  position: relative;
 }
 .navigation-item:not(:last-child) {
   margin-right: 50px;
@@ -148,6 +166,7 @@ svg {
 .bg-principal-tittle {
   background-image: url('./../img/personasdiseñandouncarro.jpg');
   background-color: rgba(47, 48, 58, 0.4);
+  position: relative;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -225,6 +244,8 @@ svg {
 .option-buttons:hover {
   color: var(--detail-color);
   background-color: var(--custom-light);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .option-buttons {
   cursor: pointer;
@@ -235,19 +256,66 @@ svg {
   text-align: center;
   padding: 6px 24px;
   border-radius: 4px;
+  border: none;
   justify-content: center;
 }
 .focus-buttons > .buttons-portafolio *:focus {
+  color: var(--detail-color);
   background-color: var(--custom-light);
 }
 /*seccion 2 */
+.box {
+  padding: 24px;
+}
+.card-portafolio {
+  width: 370px;
+  height: 404px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #eeeeee;
+  flex-basis: calc((100% - 20px) / 3);
+  overflow: hidden;
+  position: relative;
+}
+.card-portafolio:hover {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card-portafolio:hover > .text-overflox-cards {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-420px);
+}
+.text-overflox-cards {
+  padding: 63px 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 300px;
+  position: absolute;
+}
+.card {
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  flex-basis: auto;
+  margin: 0 auto;
+}
+.img-projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .projects-name {
   color: var(--custom-dark);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
   margin-bottom: 4px;
 }
 .description-projects {
@@ -270,10 +338,6 @@ svg {
   font-weight: 700;
   line-height: 0.8;
 }
-.button-current {
-  color: var(--buttons-color);
-  background-color: var(--custom-light);
-}
 /*flexbox*/
 .header-links {
   display: flex;
@@ -287,10 +351,6 @@ svg {
 .header-navigation {
   display: flex;
   align-items: center;
-}
-.menu-item {
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .header-contact-item:not(:last-child) {
   margin-right: 50px;
@@ -332,17 +392,6 @@ svg {
   display: flex;
   gap: 10px;
 }
-.box {
-  padding: 24px;
-}
-.card {
-  background-color: white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  flex-basis: auto;
-  margin: 0 auto;
-}
 .bg-footer {
   background-color: var(--custom-dark);
   padding-top: 60px;
@@ -363,34 +412,6 @@ svg {
   justify-content: center;
   gap: 8px;
   margin-bottom: 56px;
-}
-.option-buttons {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  justify-content: center;
-  border: none;
-}
-.buttons-portafolio:hover {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.img-projects {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.card-portafolio {
-  background-color: white;
-  border: 1px solid #eeeeee;
-  flex-basis: calc((100% - 20px) / 3);
-}
-.card-portafolio:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .list-websites {
   display: flex;
@@ -468,20 +489,15 @@ svg {
   background: rgba(47, 48, 58);
   opacity: 0.8;
 }
+
 .icons {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   margin-bottom: 42px;
 }
-.icons-our-team:hover {
-  border: 1px solid var(--custom-light);
-  background-color: #2196f3;
-}
-.icons-clients > svg:hover use {
-  fill: var(--custom-light);
-}
 .clients:hover {
+  fill: var(--custom-light);
   border: 1px solid var(--custom-light);
   border-radius: 4px;
 }
@@ -498,6 +514,9 @@ svg {
 .clients {
   width: 170px;
   height: 81px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flex-websites {
   display: flex;
@@ -530,4 +549,25 @@ svg {
 .footer-container {
   display: flex;
   gap: 70px;
+}
+/*ventana modal*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  justify-content: flex-end;
+}
+.is-hidden {
+  display: none;
 }
