@@ -27,6 +27,7 @@ p {
   border: 0;
 }
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -68,11 +69,7 @@ svg {
   text-decoration: none;
   color: inherit;
 }
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+
 /*genericos*/
 .color-telefon-mail {
   color: #757575;
@@ -163,7 +160,8 @@ svg {
 /*Main*/
 /*seccion 1*/
 .bg-principal-tittle {
-  background-image: url('./../img/personasdiseñandouncarro.jpg');
+  background-image: linear-gradient(#2f303a66, #2f303a66),
+    url('./../img/personasdiseñandouncarro.jpg');
   background-color: rgba(47, 48, 58, 0.4);
   position: relative;
   padding-top: 200px;
@@ -499,27 +497,28 @@ svg {
   justify-content: space-evenly;
   margin-bottom: 42px;
 }
-.clients:hover {
-  fill: var(--custom-light);
-  border: 1px solid var(--custom-light);
-  border-radius: 4px;
-}
 .icons-clients {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   color: #afb1b8;
 }
-
 .clients:not(:last-child) {
   margin-right: 30px;
 }
 .clients {
   width: 170px;
   height: 81px;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients:hover {
+  color: var(--custom-light);
+  border: 1px solid var(--custom-light);
+  border-radius: 4px;
 }
 .flex-websites {
   display: flex;
