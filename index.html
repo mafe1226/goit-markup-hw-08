@@ -16,12 +16,6 @@
     />
   </head>
   <body>
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal ">
-        <svg width="30" height="30" data-modal-close>
-          <use href="./img/icons.svg#icon-close-1"></use>
-        </svg>
-      </div>
     </div>
     <header>
       <div class="container header-links">
@@ -481,8 +475,69 @@
             </li>
           </ul>
         </aside>
+        <div>
+          <p class="text-suscribe">SUSCRÍBASE AL BOLETIN INFORMATIVO </p>
+          <div>
+            <form>
+              <label for="name">
+                <input type="email" name="email" placeholder="Correo electrónico" class="input-suscribe">
+              </label>
+              <button type="submit" class="button-suscribe">Suscríbase</button>
+              <svg width="24" height="24" class="logo-suscribe">
+                <use href="./img/icons.svg#icon-enviar-cono-1"></use>
+              </svg>
+            </form>
+          </div>
+        </div>
       </div>
     </footer>
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal ">
+        <svg width="30" height="30" data-modal-close class="svg-close">
+          <use href="./img/icons.svg#icon-close-1"></use>
+        </svg>
+        <form class="form">
+          <p class="form-tittle">Deje sus datos, nos contactaremos con usted</p>
+          <div>
+            <label for="name" class="form-name">Nombre</label> 
+            <div class="form-svg-input">              
+              <input type="text" name="name" class="form-input" required> 
+              <svg width="18" height="18" class="form-icon form-icon-fo-ho">
+                <use href="./img/icons.svg#icon-persona-negra-18dp-1-1"></use>
+              </svg>
+            </div> 
+            <label for="telefono" class="form-name">Telefono</label> 
+            <div>              
+              <input type="tel" name="telefono" class="form-input"> 
+              <svg width="18" height="18" class="form-icon-telefono form-icon-fo-ho">
+                <use href="./img/icons.svg#icon-telfono-negro-18dp-1-1"></use>
+              </svg>
+            </div> 
+            <label for="email" class="form-name">E-mail</label> 
+            <div>              
+              <input type="email" name="email" class="form-input"> 
+              <svg width="18" height="18" class="form-icon-mail form-icon-fo-ho">
+                <use href="./img/icons.svg#icon-correo-electrnico-negro-18dp-1-1"></use>
+              </svg>
+            </div> 
+            <label for="comments" class="form-name">Comentarios</label> 
+            <div>              
+              <input type="text" name="comments" placeholder="Introduzca el texto" 
+              class="form-input-comments"> 
+            </div>
+            <label for="comments" class="form-name">              
+              <input type="checkbox" name="comments" class="input-checkbox">
+                <svg width="16" height="15" class="check-icon">
+                  <use href="./img/icons.svg#icon-Vector-3-1"></use>
+                </svg> 
+                Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+            </label>
+            <div class="form-button"> 
+              <button type="submit" class="submit-bottom">Enviar</button>
+            </div> 
+          </div>
+      </form>
+      </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
