@@ -649,17 +649,19 @@ svg {
 .input-checkbox {
   width: 16px;
   height: 15px;
-  /*appearance: none;
+  appearance: none;
   -moz-appearance: none;
-  -webkit-appearance: none;*/
-}
-.check-icon {
-  border: 1px solid var(--custom-dark);
-  border-radius: 2px;
+  -webkit-appearance: none;
 }
 .input-checkbox:checked + .check-icon {
   background-color: var(--custom-light);
 }
+.check-icon {
+  border: 1px solid var(--custom-dark);
+  position: relative;
+  left: -10px;
+}
+
 .form-button {
   display: flex;
   justify-content: center;
@@ -728,14 +730,5 @@ svg {
   position: absolute;
 }
 .logo-suscribe {
-  fill: var(--buttons-color);
-  position: absolute;
-  right: 4%;
-  top: 2880px;
-}
-.logo-suscribe-portafolio {
-  fill: var(--buttons-color);
-  position: absolute;
-  right: 4%;
-  top: 1700px;
+  margin-left: 20px;
 }
