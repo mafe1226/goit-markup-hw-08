@@ -1,0 +1,43 @@
+//footer
+.footer__bg {
+  background-color: $custom-dark;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-style: normal;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__container {
+  display: flex;
+  gap: 70px;
+}
+.container__contact {
+  justify-content: space-evenly;
+  text-align: left;
+  .contact__footer {
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    line-height: 1.5;
+  }
+}
+.container__contact > .contact__footer :hover {
+  color: $custom-light;
+}
+.container__contact > .contact__footer :focus {
+  color: $custom-light;
+}
+.logo-azul {
+  color: $custom-light;
+  font-weight: 700;
+  font-size: 26px;
+}
+.address__section {
+  line-height: 0.5;
+  cursor: pointer;
+}
+.address__section > .contact > .contact-footer :hover {
+  color: $custom-light;
+}

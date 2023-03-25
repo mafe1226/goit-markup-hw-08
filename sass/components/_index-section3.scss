@@ -1,0 +1,19 @@
+.main__what-do-we-do--img {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-basis: calc((100% - 40px) / 3);
+}
+.main__what-do-we-do--bg {
+  padding: 27px 80px;
+  position: absolute;
+  width: 100%;
+  bottom: 1px;
+  background: rgba(47, 48, 58);
+  opacity: 0.8;
+  .main__what-we-do--text {
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+  }
+}

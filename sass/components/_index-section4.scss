@@ -1,0 +1,51 @@
+.main__team--bg {
+  background-color: $detail-color;
+}
+.cards__container {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  .card__image {
+    width: 270px;
+    height: 428px;
+    background-color: white;
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+.card__name {
+  color: $custom-dark;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0.8;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.card__profession {
+  color: $secundary-color;
+  font-size: 16px;
+  line-height: 0.8;
+  margin-bottom: 30px;
+}
+.card__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  .icons__websites {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff1a;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    color: #afb1b8;
+  }
+}
+.icons__websites:hover {
+  background-color: $custom-light;
+  color: $detail-color;
+}

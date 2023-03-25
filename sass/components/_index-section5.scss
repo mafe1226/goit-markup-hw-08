@@ -1,0 +1,24 @@
+.container__clients {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+
+  .icons__clients {
+    width: 170px;
+    height: 81px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+  }
+}
+.icons__clients:hover {
+  color: $custom-light;
+  border: 1px solid $custom-light;
+  border-radius: 4px;
+}
+.icons__clients:not(:last-child) {
+  margin-right: 30px;
+}

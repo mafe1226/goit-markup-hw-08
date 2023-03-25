@@ -9,7 +9,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
   />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./sass/main.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,900;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -17,37 +17,37 @@
   </head>
   <body>
     <header>
-      <div class="container header-links">
-        <nav class=" header-links">
-        <a href="index.html" class="text-decoration logo-link link-webstudio">
+      <div class="container header__links">
+        <nav class=" header__links">
+        <a href="index.html" class="text-decoration logo-link header__link--webstudio">
         <span class="logo-azul ">Web</span>Studio</a
       >
-        <ul class="header-navigation list-style">
-          <li class="navigation-item">
-            <a href="index.html" class="text-decoration color-dark  transition-color">Estudio</a>
+        <ul class="header__navigation">
+          <li class="header__navigation--item">
+            <a href="index.html" class="text-decoration color-dark transition-color">Estudio</a>
           </li>
-          <li class="navigation-item">
+          <li class="header__navigation--item">
             <a class="current-link text-decoration transition-color" href="portafolio.html">Portafolio</a>
           </li>
-          <li class="navigation-item">
+          <li class="header__navigation--item">
             <a href="contactos" class="text-decoration color-dark transition-color">contactos</a>
           </li>
         </ul>
       </nav>
-      <ul class="header-contact-section list-style">
-        <li class="header-contact-item"> 
+      <ul class="header__contact">
+        <li class="header__contact--item"> 
             <a href="mailto:info@devstudio.com" 
-            class=" color-telefon-mail header-logo text-decoration focus-buttons-links transition-color"
+            class=" color-telefon-mail text-decoration transition-color"
             >
-            <svg class="mail-icon header-icons ">
+            <svg width="16" height="12" class="header__contact--icons ">
               <use href="./img/icons.svg#icon-sobre-1" ></use>
             </svg>info@devstudio.com
             </a>
         </li>
-        <li class="header-contact-item">
+        <li class="header__contact--item">
           <a href="tel:+525555296000" 
-            class=" color-telefon-mail header-logo text-decoration focus-buttons-links transition-color">
-            <svg class="telefon-icon">
+            class=" color-telefon-mail transition-color text-decoration ">
+            <svg width="12" height="16" class="header__contact--icons">
               <use href="./img/icons.svg#icon-telfono-inteligente-1"></use>
             </svg>
             +52 55 5529 6000
@@ -60,47 +60,47 @@
       <!-- HIDDEN -->
       <section class="section">
         <div class="container">
-          <ul class="buttons list-style focus-buttons ">
-            <li class="buttons-portafolio">
-              <button class="option-buttons transition-color">Todo</button>
+          <ul class="container__buttons">
+            <li class="buttons__item">
+              <button class="option__buttons transition-color">Todo</button>
             </li>
-            <li class="buttons-portafolio">
-              <button class="option-buttons transition-color">Sitios-web</button>
+            <li class="buttons__item">
+              <button class="option__buttons transition-color">Sitios-web</button>
             </li>
-            <li class="buttons-portafolio">
-              <button class="option-buttons transition-color">Aplicaciones</button>
+            <li class="buttons__item">
+              <button class="option__buttons transition-color">Aplicaciones</button>
             </li>
-            <li class="buttons-portafolio">
-              <button class="option-buttons transition-color">Diseño</button>
+            <li class="buttons__item">
+              <button class="option__buttons transition-color">Diseño</button>
             </li>
-            <li class="buttons-portafolio">
-              <button class="option-buttons transition-color">Marketing</button>
+            <li class="buttons__item">
+              <button class="option__buttons transition-color">Marketing</button>
             </li>
           </ul>
         </div>
       <div class="container">
-        <ul class="list-style img-projects">
-          <li class="card-portafolio">
-            <div class="image-cards-container">
+        <ul class="cards__projects">
+          <li class="card__projects--item">
+            <div class="cards__projects--image">
               <img
                 src="./img/computadorcontrespersonas.jpg"
                 alt="Computador con tres sujetos"
                 width="370"
                 height="294"
               />
-                <p class="text-overflox-cards">
+                <p class="card__projects--text">
                   Tecnoduck es una plataforma de distribución de coronavirus de última generación. 
                   Las compañías usan esta plataforma para el espionaje digital y los ataques a los 
                   servidores seguros de la competencia.
                 </p>
             </div>
             <div class="box">
-              <h2 class="projects-name">Tecnoduck</h4>
-              <p class="description-projects">Sitio-web</p>
+              <h2 class="cards__projects--name">Tecnoduck</h4>
+              <p class="cards__projects--description">Sitio-web</p>
             </div>
           </li>
-          <li class="card-portafolio">
-            <div class="image-cards-container">
+          <li class="card__projects--item">
+            <div class="cards__projects--image">
               <img
                 src="./img/jugandobaloncesto.jpg"
                 alt="dos personas jugando
@@ -108,165 +108,165 @@
                 width="370"
                 height="294"
               />
-              <p class="text-overflox-cards">
+              <p class="card__projects--text">
                 Tecnoduck es una plataforma de distribución de coronavirus de última generación. 
                 Las compañías usan esta plataforma para el espionaje digital y los ataques a los 
                 servidores seguros de la competencia.
               </p>
             </div>
             <div class="box">
-              <h2 class="projects-name">
+              <h2 class="cards__projects--name">
                 Nueva Orleans vs Estrella Dorada 
               </h2>
-              <p class="description-projects">Diseño</p>
+              <p class="cards__projects--description">Diseño</p>
             </div>
           </li>
-          <li class="card-portafolio">
-            <div class="image-cards-container">
+          <li class="card__projects--item">
+            <div class="cards__projects--image">
               <img
                 src="./img/restuaurantedemar.jpg"
                 alt="Restaurante de mar"
                 width="370"
                 height="294"
               />
-              <p class="text-overflox-cards">
+              <p class="card__projects--text">
                 Tecnoduck es una plataforma de distribución de coronavirus de última generación. 
                 Las compañías usan esta plataforma para el espionaje digital y los ataques a los 
                 servidores seguros de la competencia.
               </p>
             </div>
             <div class="box">
-              <h2 class="projects-name">Restaurante Seafood</h2>
-              <p class="description-projects">Aplicaciones</p>
+              <h2 class="cards__projects--name">Restaurante Seafood</h2>
+              <p class="cards__projects--description">Aplicaciones</p>
             </div>
           </li>
-          <li class="card-portafolio">
-            <div class="image-cards-container">
+          <li class="card__projects--item">
+            <div class="cards__projects--image">
               <img
                 src="./img/audifonos.jpg"
                 alt=" Audifonos en casco"
                 width="370"
                 height="294"
               />
-              <p class="text-overflox-cards">
+              <p class="card__projects--text">
                 Tecnoduck es una plataforma de distribución de coronavirus de última generación. 
                 Las compañías usan esta plataforma para el espionaje digital y los ataques a los 
                 servidores seguros de la competencia.
               </p>
             </div>
             <div class="box"> 
-              <h2 class="projects-name">Proyecto Prime</h2>
-              <p class="description-projects">Marketing</p>
+              <h2 class="cards__projects--name">Proyecto Prime</h2>
+              <p class="cards__projects--description">Marketing</p>
             </div>
           
           </li>
-          <li class="card-portafolio">
-            <div class="image-cards-container">
+          <li class="card__projects--item">
+            <div class="cards__projects--image">
               <img
                 src="./img/cajas.jpg"
                 alt="Dos cajas pequeñas"
                 width="370"
                 height="294"
               />
-              <p class="text-overflox-cards">
+              <p class="card__projects--text">
                 Tecnoduck es una plataforma de distribución de coronavirus de última generación. 
                 Las compañías usan esta plataforma para el espionaje digital y los ataques a los 
                 servidores seguros de la competencia.
               </p>
             </div>
             <div class="box">
-              <h2 class="projects-name">Proyecto Cajas</h2>
-              <p class="description-projects">Aplicaciones</p>
+              <h2 class="cards__projects--name">Proyecto Cajas</h2>
+              <p class="cards__projects--description">Aplicaciones</p>
             </div>
           </li>
-          <li class="card-portafolio">
-            <div class="image-cards-container">
+          <li class="card__projects--item">
+            <div class="cards__projects--image">
               <img
                 src="./img/computadordeescritoio.jpg"
                 alt="Computador"
                 width="370"
                 height="294"
               />
-              <p class="text-overflox-cards">
+              <p class="card__projects--text">
                 Tecnoduck es una plataforma de distribución de coronavirus de última generación. 
                 Las compañías usan esta plataforma para el espionaje digital y los ataques a los 
                 servidores seguros de la competencia.
               </p>
             </div>
             <div class="box">
-              <h2 class="projects-name">La inspiración no tiene límites</h2>
-              <p class="description-projects">Sitio-web</p>
+              <h2 class="cards__projects--name">La inspiración no tiene límites</h2>
+              <p class="cards__projects--description">Sitio-web</p>
             </div>          
           </li>
-          <li class="card-portafolio">
-            <div class="image-cards-container">
+          <li class="card__projects--item">
+            <div class="cards__projects--image">
               <img
                 src="./img/revista.jpg"
                 alt="Revista de moda"
                 width="370"
                 height="294"
               />
-              <p class="text-overflox-cards">
+              <p class="card__projects--text">
                 Tecnoduck es una plataforma de distribución de coronavirus de última generación. 
                 Las compañías usan esta plataforma para el espionaje digital y los ataques a los 
                 servidores seguros de la competencia.
               </p>
             </div>
             <div class="box">
-              <h2 class="projects-name ">Edición Limitada</h2>
-              <p class="description-projects">Diseño</p>
+              <h2 class="cards__projects--name">Edición Limitada</h2>
+              <p class="cards__projects--description">Diseño</p>
             </div>            
           </li>
-          <li class="card-portafolio">
-            <div class="image-cards-container">
+          <li class="card__projects--item">
+            <div class="cards__projects--image">
               <img
                 src="./img/etiqueta.jpg"
                 alt="Eqtiqueta de ropa"
                 width="370"
                 height="294"
               />  
-              <p class="text-overflox-cards">
+              <p class="card__projects--text">
                 Tecnoduck es una plataforma de distribución de coronavirus de última generación. 
                 Las compañías usan esta plataforma para el espionaje digital y los ataques a los 
                 servidores seguros de la competencia.
               </p>
             </div>          
             <div class="box">
-              <h2 class="projects-name ">Proyecto LAB</h2>
-              <p class="description-projects">Marketing</p>
+              <h2 class="cards__projects--name">Proyecto LAB</h2>
+              <p class="cards__projects--description">Marketing</p>
             </div>              
           </li>
-          <li class="card-portafolio">
-            <div class="image-cards-container">
+          <li class="card__projects--item">
+            <div class="cards__projects--image">
               <img
                 src="./img/portatil.jpg"
                 alt="Persona usando un portatil"
                 width="370"
                 height="294"
               />
-              <p class="text-overflox-cards">
+              <p class="card__projects--text">
                 Tecnoduck es una plataforma de distribución de coronavirus de última generación. 
                 Las compañías usan esta plataforma para el espionaje digital y los ataques a los 
                 servidores seguros de la competencia.
               </p>
             </div>
             <div class="box">
-              <h2 class="projects-name ">Negocio en Crecimiento</h2>
-              <p class="description-projects">Aplicaciones</p>
+              <h2 class="cards__projects--name ">Negocio en Crecimiento</h2>
+              <p class="cards__projects--description">Aplicaciones</p>
             </div>            
           </li>
         </ul>
       </div>
       </section>
     </main>
-    <footer class="bg-footer">
-      <div class="container footer-container">
-      <address class="address-section">
-        <ul class="contact list-style">
-          <li class="contact-footer space-footer">
+    <footer class="footer__bg">
+      <div class="container footer__container">
+      <address class="address__section">
+        <ul class="container__contact">
+          <li class="contact__footer">
             <a href="index.html" class="text-decoration logo-azul">WebStudio</a>
           </li>
-          <li class="contact-footer space-footer">
+          <li class="contact__footer space-footer">
             <a
               href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102072,-99.1346799,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?hl=es"
               class=" transition-color color-white text-decoration"
@@ -274,7 +274,7 @@
               Calz. Ticomán 500, Ciudad de México, CDMX, México</a
             >
           </li>
-          <li class="contact-footer space-footer">
+          <li class="contact__footer">
             <a
               href="mailto:info@example.com"
               class="color-white text-decoration transition-color"
@@ -282,47 +282,55 @@
               info@example.com</a
             >
           </li>
-          <li class="contact-footer space-footer">
+          <li class="contact__footer">
             <a href="tel:+525555296000" class="color-white text-decoration transition-color">
               +52 55 5529 6000
             </a>
           </li>
         </ul>
       </address>
-      <aside class="tittle-websites">
-        <h3 class="tittle-websites">ENCUENTRENOS EN</h3>
-        <ul class="list-style flex-websites">
-          <li class="webistes">
-            <svg width="20" height="20" class="transition-color">
-              <use  href="./img/icons.svg#icon-instagram-2-1"></use>
-            </svg>
+      <aside>
+        <h3 class="aside__tittle">ENCUENTRENOS EN</h3>
+        <ul class="card__icons">
+          <li class="icons__websites">
+            <a href="#" class="transition-color">
+              <svg width="20" height="20" class="transition-color">
+                <use  href="./img/icons.svg#icon-instagram-2-1"></use>
+              </svg>
+            </a>
           </li>
-          <li class="webistes"> 
-            <svg width="20" height="20" class="transition-color">
-              <use href="./img/icons.svg#icon-twitter-1-1"></use>
-            </svg>
+          <li class="icons__websites"> 
+            <a href="#" class="transition-color">
+              <svg width="20" height="20" class="transition-color">
+                <use href="./img/icons.svg#icon-twitter-1-1"></use>
+              </svg>
+            </a>
           </li>
-          <li class="webistes">
-            <svg width="20" height="20" class="transition-color">
-              <use href="./img/icons.svg#icon-facebook-1-1"></use>
-            </svg>
+          <li class="icons__websites">
+            <a href="#" class="transition-color">
+              <svg width="20" height="20" class="transition-color">
+                <use href="./img/icons.svg#icon-facebook-1-1"></use>
+              </svg>
+            </a>
           </li>
-          <li class="webistes">
-            <svg width="20" height="20" class="transition-color">
-              <use href="./img/icons.svg#icon-linkedin-1-1"></use>
-            </svg>
+          <li class="icons__websites">
+            <a href="#" class="transition-color">
+              <svg width="20" height="20" class="transition-color">
+                <use href="./img/icons.svg#icon-linkedin-1-1"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </aside>
       <div>
-        <p class="text-suscribe">SUSCRÍBASE AL BOLETIN INFORMATIVO </p>
+        <p class="footer__suscribe">SUSCRÍBASE AL BOLETIN INFORMATIVO </p>
           <div>
             <form>
               <label for="name">
-                <input type="email" name="email" placeholder="Correo electrónico" class="input-suscribe">
+                <input type="email" name="email" placeholder="Correo electrónico" class="form__input--suscribe">
               </label>
-              <button type="submit" class="button-suscribe">Suscríbase
-                <svg width="24" height="24" class="logo-suscribe">
+              <button type="submit" class="form__button">Suscríbase
+                <svg width="24" height="24" class="button__icon">
                   <use href="./img/icons.svg#icon-enviar-cono-1"></use>
                 </svg>
               </button>            

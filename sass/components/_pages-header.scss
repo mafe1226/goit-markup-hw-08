@@ -1,0 +1,54 @@
+// header
+
+.header__links {
+  display: flex;
+  justify-content: space-evenly;
+
+  .header__link--webstudio {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    display: flex;
+  }
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+
+  .header__navigation--item {
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    position: relative;
+  }
+}
+.header__navigation--item:not(:last-child) {
+  margin-right: 50px;
+}
+.header__navigation > .header__navigation--item > :hover {
+  color: $custom-light;
+}
+.header__contact {
+  display: flex;
+  align-items: center;
+}
+.header__contact > .header__contact--item {
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.header__contact--item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contact-item > svg:hover use {
+  fill: $custom-light;
+}
+.header__contact--icons {
+  margin-right: 10px;
+}
+
+.header__contact > .header__contact--item *:hover {
+  color: $custom-light;
+}
+.header__contact > .header__contact--item > *:focus {
+  color: $custom-light;
+}
