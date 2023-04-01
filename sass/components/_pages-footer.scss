@@ -41,3 +41,29 @@
 .address__section > .contact > .contact-footer :hover {
   color: $custom-light;
 }
+@media (max-width: 498px) {
+  .footer__container {
+    display: block;
+    text-align: center;
+  }
+  .container__contact {
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__container {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .container__contact {
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .address__section {
+    margin-right: 80px;
+  }
+}

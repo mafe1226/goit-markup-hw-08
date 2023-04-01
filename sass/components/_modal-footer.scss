@@ -32,3 +32,36 @@
     margin-left: 20px;
   }
 }
+@media (max-width: 498px) {
+  .form__button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .form__button {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 291px;
+  }
+  .form__input--suscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+
+    margin-left: 166px;
+  }
+  .footer__suscribe {
+    text-align: center;
+    width: 768px;
+  }
+}

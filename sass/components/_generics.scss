@@ -112,3 +112,22 @@ svg {
 .relative {
   position: relative;
 }
+@media (max-width: 498px) {
+  .main__subtitles {
+    font-weight: 700;
+    font-size: 28px;
+    display: flex;
+    margin-left: 25%;
+  }
+  .container {
+    width: 498px;
+  }
+  .no-section {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}

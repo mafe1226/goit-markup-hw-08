@@ -17,3 +17,29 @@
     text-align: center;
   }
 }
+@media (max-width: 500px) {
+  .main__what-do-we-do--img {
+    display: none;
+    padding: 0;
+  }
+  .tittle__do {
+    display: none;
+    padding: 0;
+  }
+  .no__section {
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .main__what-do-we-do--img {
+    display: none;
+    padding: 0;
+  }
+  .tittle__do {
+    display: none;
+    padding: 0;
+  }
+  .no__section {
+    padding: 0;
+  }
+}
