@@ -52,6 +52,14 @@
 .header__contact > .header__contact--item > *:focus {
   color: $custom-light;
 }
+@media (max-width: 768px) {
+  .header__contact {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-left: 60px;
+  }
+}
 @media (max-width: 498px) {
   .header__navigation {
     display: none;
@@ -67,13 +75,5 @@
     position: absolute;
     right: 1%;
     top: 3%;
-  }
-}
-@media (max-width: 768px) {
-  .header__contact {
-    display: inline-block;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    margin-left: 60px;
   }
 }

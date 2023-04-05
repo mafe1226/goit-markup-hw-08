@@ -170,13 +170,13 @@
           <h2 class="main__subtitles color-dark tittle__do">A qué nos dedicamos</h2>
           <ul class="main__what-do-we-do--img">
             <li>
-              <div class="relative">
-                <img
-                  src="./img/personatecleando.jpg"
-                  width="373"
-                  height="323"
-                  alt="Persona escribiendo en un teclado"
-                />
+              <div class="relative">                
+                  <img
+                    src="./img/personatecleando.jpg"
+                    width="373"
+                    height="323"
+                    alt="Persona escribiendo en un teclado"
+                  />
                 <div class="main__what-do-we-do--bg">
                   <p class="main__what-we-do--text">APLICACIONES DE ESCRITORIO</p>
                 </div>
@@ -184,12 +184,12 @@
             </li>
             <li>
               <div class="relative">
-                <img
-                  src="./img/personaenuncomputador.jpg"
-                  width="373"
-                  height="323"
-                  alt="Persona con celular en la mano y un computador"
-                />
+                  <img
+                    src="./img/personaenuncomputador.jpg"
+                    width="373"
+                    height="323"
+                    alt="Persona con celular en la mano y un computador"
+                  />
                 <div class="main__what-do-we-do--bg">
                   <p class="main__what-we-do--text">APLICACIONES MOVILES</p>
                 </div>
@@ -197,12 +197,12 @@
             </li>
             <li>
               <div class="relative">
-                <img
-                  src="./img/personamirandounpaletadecoloresenunatablet.jpg"
-                  width="373"
-                  height="323"
-                  alt="Persona en un tablet viendo una paleta de colores"
-                />
+                  <img
+                    src="./img/personamirandounpaletadecoloresenunatablet.jpg"
+                    width="373"
+                    height="323"
+                    alt="Persona en un tablet viendo una paleta de colores"
+                  />
                 <div class="main__what-do-we-do--bg">
                   <p class="main__what-we-do--text">SOLUCIONES DE DISEÑO</p>
                 </div>
@@ -218,12 +218,16 @@
           </h2>
           <ul class="cards__container">
             <li class="card__image">
-              <img
-                src="./img/hombrecongafas.jpg"
-                width="270"
-                height="260"
-                alt="hombre con gafas"
-              />
+              <picture>
+                <source media="(min-width:768px )" srcset="./img/hombrecongafas_tablet1x.jpg 1x, ./img/hombrecongafas_tablet2x.jpg 2x">
+                <source media="(min-width:480px )" srcset="./img/hombrecongafas_cel1x.jpg 1x,./img/hombrecongafas_cel2x.jpg 2x">
+                <img
+                  src="./img/hombrecongafas.jpg"
+                  width="270"
+                  height="260"
+                  alt="hombre con gafas"
+                />
+              </picture>
               <h3 class="card__name color-dark">Andrés Cubo</h3>
               <p class="card__profession">Diseñador de Productos</p>
               <div>
@@ -260,12 +264,16 @@
               </div>
             </li>
             <li class="card__image">
-              <img
-                src="./img/mujerrubia.jpg"
-                width="270"
-                height="260"
-                alt="mujer rubia con gafas"
-              />
+              <picture>
+                  <source media="(min-width:768px )" srcset="./img/mujerrubia_tablet1x.jpg 1x, ./img/mujerrubia_tablet2x.jpg 2x">
+                  <source media="(min-width:480px )" srcset="./img/mujerrubia__cel1x.jpg 1x, ./img/mujerrubia_cel2x.jpg 2x">
+                  <img
+                    src="./img/mujerrubia.jpg"
+                    width="270"
+                    height="260"
+                    alt="mujer rubia con gafas"
+                  />
+              </picture>
               <h3 class="card__name color-dark">Carla Palacios</h3>
               <p class="card__profession">Desarrolladora Frontend</p>
               <div>
@@ -302,12 +310,16 @@
               </div>
             </li>
             <li class="card__image">
-              <img
-                src="./img/hombreconbarba.jpg"
-                width="270"
-                height="260"
-                alt="hombre con barba"
-              />
+              <picture>
+                <source media="(min-width:768px )" srcset="./img/hombreconbarba_tablet1x.jpg 1x,./img/hombreconbarba_tablet2x.jpg 2x">
+                <source media="(min-width:480px )" srcset="./img/hombreconbarca_cel1x.jpg 1x,./img/hombreconbarba_cel2x.jpg 2x">
+                <img
+                  src="./img/hombreconbarba.jpg"
+                  width="270"
+                  height="260"
+                  alt="hombre con barba"
+                />
+              </picture>
               <h3 class="card__name color-darkdark">Mario Dorado</h3>
               <p class="card__profession">Marketing</p>
               <div>
@@ -344,12 +356,16 @@
               </div>
             </li>
             <li class="card__image">
-              <img
-                src="./img/hombreconcamisanegra.jpg"
-                width="270"
-                height="260"
-                alt="hombre con camisa negra"
-              />
+              <picture>
+                <source media="(min-width:768px )" srcset="./img/hombreconcamisetanegra_tablet1x.jpg 1x,./img/hombreconcmisetanegra_tablet2x.jpg 2x">
+                <source media="(min-width:480px )" srcset="./img/hombreconcamisetanegra_cel1x.jpg 1x,./img/hombreconcamisetanegra_cel2x.jpg 2x">
+                <img
+                  src="./img/hombreconcamisanegra.jpg"
+                  width="270"
+                  height="260"
+                  alt="hombre con camisa negra"
+                />
+              </picture>
               <h3 class="card__name color-dark">Pablo Mijangos</h3>
               <p class="card__profession">Diseñador IU</p>
               <div>

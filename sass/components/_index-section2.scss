@@ -38,6 +38,16 @@
   color: $secundary-color;
   line-height: 1;
 }
+@media (max-width: 768px) {
+  .main__advantages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main__advantages--icons {
+    width: 354px;
+    height: 120px;
+  }
+}
 @media (max-width: 498px) {
   .main__advantages {
     display: flex;
@@ -50,15 +60,5 @@
   }
   .main__advantages--tittles {
     text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  .main__advantages {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .main__advantages--icons {
-    width: 354px;
-    height: 120px;
   }
 }

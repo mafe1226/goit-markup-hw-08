@@ -49,6 +49,20 @@
   background-color: $custom-light;
   color: $detail-color;
 }
+@media (max-width: 768px) {
+  .cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .cards__container .card__image {
+    width: 354px;
+    height: 536px;
+  }
+  .card__icons {
+    margin-bottom: 60px;
+  }
+}
 @media (max-width: 498px) {
   .main__team--bg {
     width: 498px;
@@ -61,20 +75,6 @@
   .cards__container .card__image {
     width: 450px;
     height: 622px;
-  }
-  .card__icons {
-    margin-bottom: 60px;
-  }
-}
-@media (max-width: 768px) {
-  .cards__container {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .cards__container .card__image {
-    width: 354px;
-    height: 536px;
   }
   .card__icons {
     margin-bottom: 60px;

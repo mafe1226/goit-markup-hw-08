@@ -112,6 +112,12 @@ svg {
 .relative {
   position: relative;
 }
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
 @media (max-width: 498px) {
   .main__subtitles {
     font-weight: 700;
@@ -124,10 +130,5 @@ svg {
   }
   .no-section {
     padding: 0;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 768px;
   }
 }

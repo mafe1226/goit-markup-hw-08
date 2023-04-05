@@ -22,20 +22,6 @@
 .icons__clients:not(:last-child) {
   margin-right: 30px;
 }
-@media (max-width: 498px) {
-  .container__clients {
-    display: flex;
-    flex-wrap: wrap;
-    width: 498px;
-  }
-  .container__clients .icons__clients {
-    margin-bottom: 30px;
-    width: 210px;
-    height: 92px;
-    justify-content: center;
-    display: flex;
-  }
-}
 @media (max-width: 768px) {
   .container__clients {
     display: flex;
@@ -48,5 +34,21 @@
     height: 92px;
     justify-content: center;
     display: flex;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 498px) {
+  .container__clients {
+    display: flex;
+    flex-wrap: wrap;
+    width: 498px;
+  }
+  .container__clients .icons__clients {
+    margin-bottom: 30px;
+    width: 210px;
+    height: 92px;
+    justify-content: center;
+    display: flex;
+    margin-right: 30px;
   }
 }
