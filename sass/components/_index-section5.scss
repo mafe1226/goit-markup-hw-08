@@ -24,9 +24,7 @@
 }
 @media (max-width: 768px) {
   .container__clients {
-    display: flex;
     flex-wrap: wrap;
-    width: 768px;
   }
   .container__clients .icons__clients {
     margin-bottom: 30px;
@@ -41,14 +39,13 @@
   .container__clients {
     display: flex;
     flex-wrap: wrap;
-    width: 498px;
+    justify-content: center;
   }
   .container__clients .icons__clients {
     margin-bottom: 30px;
-    width: 210px;
+    width: 200px;
     height: 92px;
-    justify-content: center;
-    display: flex;
-    margin-right: 30px;
+    align-items: center;
+    margin-right: 12px;
   }
 }

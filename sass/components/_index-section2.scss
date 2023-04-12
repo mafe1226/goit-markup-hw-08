@@ -40,7 +40,6 @@
 }
 @media (max-width: 768px) {
   .main__advantages {
-    display: flex;
     flex-wrap: wrap;
   }
   .main__advantages--icons {
@@ -52,7 +51,6 @@
   .main__advantages {
     display: flex;
     flex-wrap: wrap;
-    width: 20%;
   }
   .main__advantages--icons {
     width: 450px;
